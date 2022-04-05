@@ -1,0 +1,206 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+}
+
+table {
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    text-align: center;
+}
+
+.imagenLogo {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: black;
+}
+
+.contenedor-menu {
+    background-color: #E9E3E6;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.foto-main {
+    align-items: center;
+    padding: 40px;
+}
+
+.text {
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}   
+
+.contenedor-footer {
+    /* border: solid black; */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 30px;
+}   
+
+.logo {
+    align-items: left;
+}
+
+
+
+.fotos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    flex-direction: row;
+    padding:2rem;
+}
+
+.item-foto {
+    display: flex;
+    align-items: center;
+    border: 3cm;
+}
+
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main pics"
+    "footer footer footer";
+    /* grid-template-rows: 1fr, 1fr, 1fr, 1fr; */
+
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+#pics {
+    grid-area: pics;
+}
+
+/* PARA CELULARES */
+
+@media screen and (max-width: 400px) {
+    
+#grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "pics"
+    "footer";
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+.contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.foto-main {
+    max-width: fit-content;
+}
+
+}
+
+
+a {
+    box-shadow: inset 0 0 0 0 #ffffff;
+  color: #000000;
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    box-shadow: inset 200px 0 0 0 #ffffff;;
+  }
+
+#grillaPortafolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "section section section"
+    "footer footer footer";
+}
+
+.contenedor-fotos {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: row;
+}

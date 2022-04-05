@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otimo | Contacto</title>
+    <link rel="shortcut icon" href="images/favicon (2).png">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="logo">
+    <img src="images/HEADER.png" alt="logo otimo" width="300" class="centrar">
+</header>
+
+
+<nav class="contenedor-menu">
+<ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="quienessomos.html">Quiénes Somos</a></li>
+    <li><a href="portafolio.html">Trabajos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+
+    <h2>Formulario de Contacto</h2>
+    <form action="gracias.html" method="post">
+    <table cellspacing="13" cellpadding="4">
+        <tr>
+            <td> Nombre y Apellido <br> <input type="text"></td>
+            <td>Correo Electrónico <br> <input type="email"></td>
+        </tr>
+        <tr>
+            <td>Teléfono <br> <input type="text"></td>
+            <td>Empresa <br> <input type="text"></td>
+        </tr>
+        <tr>
+            <td>Tipo de Cliente <br> 
+                <select name="tipocliente" id="tipocliente">
+                    <option value="">Seleccione una opción</option>
+                    <option value="particular">Particular</option>
+                    <option value="constructor">Constructor</option>
+                    <option value="estudio">Estudio de Arquitectura</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </td>
+            <td>¿Cómo nos conociste? <br>
+                <input type="checkbox" name="referido" id="referido"> Referido por un conocido <br>
+                <input type="checkbox" name="newsletter" id="newsletter"> Newsletter/Email <br>
+                <input type="checkbox" name="internet" id="internet"> Internet (buscadores) <br>
+                <input type="checkbox" name="otros" id="otros"> Otros
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            Consulta: <br>
+             <textarea name="consulta" id="" cols="55" rows="7"></textarea>
+         </tr>
+         <tr> 
+             <td> <a href="gracias.html"><input type="submit" value="Enviar"></a> </td>
+            </tr>
+    </table>
+</form>
+    
+
+
+<footer class="contenedor-footer">
+    <div class="item-foto"><img src="images/HEADER.png" alt="Logo" width="200px"></div>
+    <div class="text-footer">
+        <p>San Martín - Buenos Aires <br>
+            Tel.: +54 11 4753-7155 <br>
+            +54 11 3888-8137</p>
+    </div>
+    <div class="text-footer"> <br> <br>
+    Mail: info@otimo.com.ar</div>
+    
+</footer>
+
+</body>
+</html>
